@@ -1,7 +1,9 @@
 const express = require('express');
 const apUser = express.Router();
 const userController = require('../controllers/userController');
-
+/**
+ * Comentario simple
+ */
 
 apUser.get('/list', function(req, res){
     res.json( { message:'Lista de usuarios', datos:'datos de usuarios' } );
